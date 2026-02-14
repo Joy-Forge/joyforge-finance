@@ -1,0 +1,20 @@
+{
+  "name": "joyforge-finance",
+  "version": "1.1.0",
+  "description": "极简 AI 记账系统 - JoyForge",
+  "author": "小心心 <xiaoxinxin@joyforge.ai>",
+  "organization": "JoyForge",
+  "license": "MIT",
+  "keywords": ["finance", "accounting", "openclaw", "ai", "markdown"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Joy-Forge/joyforge-finance.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Joy-Forge/joyforge-finance/issues"
+  },
+  "homepage": "https://github.com/Joy-Forge/joyforge-finance#readme",
+  "requires": {
+    "openclaw": ">=2026.2.0"
+  }
+}
