@@ -17,32 +17,39 @@
 
 ### 1. 安装
 
+**方法1：手动安装（推荐）**
+
 ```bash
-# 手动克隆到 OpenClaw 技能目录
+# 1. 克隆到本地
 git clone https://github.com/Joy-Forge/joyforge-finance.git
-cd joyforge-finance
-# 复制到 OpenClaw skills 目录（根据你的安装位置调整）
+
+# 2. 复制到 OpenClaw 技能目录
+# Windows:
+copy joyforge-finance %USERPROFILE%\.openclaw\workspace\skills\
+
+# macOS/Linux:
+cp -r joyforge-finance ~/.openclaw/workspace/skills/
 ```
 
-### 2. 配置
+**方法2：直接下载**
+- 点击 GitHub 右上角 "Code" → "Download ZIP"
+- 解压后复制到 OpenClaw skills 目录
 
-**默认路径结构**（可在对话中自定义）：
+### 2. 配置（2种方式）
 
+**方式A - 对话配置（最简单）**：
+在 OpenClaw 里直接说：
 ```
-~/Documents/finance/           # 财务根目录
-├── transactions/              # 交易记录（必须）
-│   └── YYYY-MM-DD-HHmm-描述.md
-└── analytics/                 # 分析报告（自动生成）
-    └── YYYY-MM-report.md
-```
-
-**自定义路径**：
-在 OpenClaw 对话中直接说：
-```
-设置记账目录为 D:\MyFinance\transactions
+设置记账目录为 D:\MyFinance
 ```
 
-详细配置见 [path-configuration.md](references/path-configuration.md)
+**方式B - 使用默认路径**：
+什么都不用做，自动使用：
+```
+~/Documents/finance/transactions/
+```
+
+📖 详细配置见 [path-configuration.md](references/path-configuration.md)
 
 ### 3. 开始记账
 
