@@ -2,7 +2,7 @@
 
 ## 文件位置
 
-**根目录**: `~/Documents/Obsidians/finance` (可自定义)
+**根目录**: `~/Documents/finance` (可自定义，详见 path-configuration.md)
 
 **交易文件**: `transactions/YYYY-MM-DD-HHmm-描述.md`
 

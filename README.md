@@ -1,7 +1,7 @@
 # JoyForge Finance
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-blue)](https://openclaw.ai)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Compatible-blue)](https://openclaw.ai)
 
 > 极简 AI 记账系统 - 说句话就能记账，自动生成财务分析
 
@@ -18,21 +18,31 @@
 ### 1. 安装
 
 ```bash
-# 通过 ClawHub 安装（推荐）
-npx clawhub install joyforge-finance
-
-# 或手动克隆
+# 手动克隆到 OpenClaw 技能目录
 git clone https://github.com/Joy-Forge/joyforge-finance.git
+cd joyforge-finance
+# 复制到 OpenClaw skills 目录（根据你的安装位置调整）
 ```
 
 ### 2. 配置
 
-在 OpenClaw 中激活技能，设置你的记账目录：
+**默认路径结构**（可在对话中自定义）：
 
-```yaml
-# 默认路径
-~/Documents/同步/私人笔记/Obsidians/finance/transactions
 ```
+~/Documents/finance/           # 财务根目录
+├── transactions/              # 交易记录（必须）
+│   └── YYYY-MM-DD-HHmm-描述.md
+└── analytics/                 # 分析报告（自动生成）
+    └── YYYY-MM-report.md
+```
+
+**自定义路径**：
+在 OpenClaw 对话中直接说：
+```
+设置记账目录为 D:\MyFinance\transactions
+```
+
+详细配置见 [path-configuration.md](references/path-configuration.md)
 
 ### 3. 开始记账
 
@@ -43,16 +53,14 @@ git clone https://github.com/Joy-Forge/joyforge-finance.git
 
 ## 📁 文件结构
 
+交易文件命名格式：
 ```
-finance/
-├── transactions/          # 交易记录
-│   ├── 2026-02-10-0830-早餐包子.md
-│   ├── 2026-02-10-1200-午餐面条.md
-│   └── ...
-└── analytics/             # 分析报告（自动生成）
-    ├── 2026-01-report.md
-    └── 2026-02-report.md
+transactions/YYYY-MM-DD-HHmm-描述.md
 ```
+
+示例：
+- `2026-02-10-0830-早餐包子.md`
+- `2026-02-10-1200-午餐面条.md`
 
 ## 📝 交易文件格式
 
@@ -77,18 +85,20 @@ tags:
 - 分类: 餐饮
 ```
 
+## 📚 文档
+
+- [文件格式规范](references/file-format.md)
+- [AI 识别规则](references/ai-rules.md)
+- [路径配置指南](references/path-configuration.md)
+- [Dataview 查询](references/bases-queries.md)
+
 ## 🔗 相关项目
 
-- [joyforge-finance-analytics](https://github.com/JoyForge/joyforge-finance-analytics) - 财务分析报表
 - [OpenClaw](https://openclaw.ai) - AI 助手平台
 
 ## 📄 许可证
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
-
-## 💝 致谢
-
-感谢走正路的产品反馈和小心心的技术实现 ❤️
 
 ---
 

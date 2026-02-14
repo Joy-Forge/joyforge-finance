@@ -14,13 +14,20 @@ tags: [finance, accounting]
 
 ## 核心规则
 
-### 1. 文件位置（可配置）
-默认路径：`~/Documents/Obsidians/finance/transactions/YYYY-MM-DD-HHmm-描述.md`
+### 1. 文件位置
 
-**自定义路径**：修改环境变量或直接在对话中指定
+**默认路径**（可自定义）：
 ```
-记账目录设置为 D:\MyFinance\transactions
+~/Documents/finance/transactions/YYYY-MM-DD-HHmm-描述.md
 ```
+
+**自定义路径**：
+在对话中直接说：
+```
+设置记账目录为 D:\MyFinance\transactions
+```
+
+详细配置见 [references/path-configuration.md](references/path-configuration.md)
 
 ### 2. 分类（4选1）
 - **餐饮**：包子、面条、奶茶、水果、零食
@@ -37,6 +44,7 @@ tags: [finance, accounting]
 
 **详细规范**：见 `references/file-format.md`  
 **AI识别规则**：见 `references/ai-rules.md`  
+**路径配置**：见 `references/path-configuration.md`  
 **Bases查询**：见 `references/bases-queries.md`
 
 ---
