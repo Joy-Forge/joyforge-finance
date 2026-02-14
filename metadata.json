@@ -1,0 +1,14 @@
+{
+  "name": "joyforge-finance",
+  "version": "1.1.0",
+  "description": "JoyForge极简记账 - 检测到消费关键词时自动记录交易",
+  "author": "小心心",
+  "for": "走正路",
+  "organization": "JoyForge",
+  "tags": ["finance", "accounting"],
+  "openclaw": {
+    "requires": {
+      "note": "用户需配置自己的记账目录，默认为 ~/Documents/finance/transactions"
+    }
+  }
+}

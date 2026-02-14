@@ -14,8 +14,13 @@ tags: [finance, accounting]
 
 ## 核心规则
 
-### 1. 文件位置
-`C:\Users\kezhe\Documents\同步\私人笔记\Obsidians\finance\transactions\YYYY-MM-DD-HHmm-描述.md`
+### 1. 文件位置（可配置）
+默认路径：`~/Documents/Obsidians/finance/transactions/YYYY-MM-DD-HHmm-描述.md`
+
+**自定义路径**：修改环境变量或直接在对话中指定
+```
+记账目录设置为 D:\MyFinance\transactions
+```
 
 ### 2. 分类（4选1）
 - **餐饮**：包子、面条、奶茶、水果、零食

@@ -2,7 +2,7 @@
 
 ## 文件位置
 
-**根目录**: `C:\Users\kezhe\Documents\同步\私人笔记\Obsidians\finance`
+**根目录**: `~/Documents/Obsidians/finance` (可自定义)
 
 **交易文件**: `transactions/YYYY-MM-DD-HHmm-描述.md`
 
